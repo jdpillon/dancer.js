@@ -386,7 +386,7 @@
       this.progress = 0;
 
       if (!this.context.createScriptProcessor) {
-        this.context.createScriptProcessor = this.context.createJavascriptNode;
+        this.context.createScriptProcessor = this.context.createScriptProcessor;
       }
       this.proc = this.context.createScriptProcessor( SAMPLE_SIZE / 2, 1, 1 );
 
